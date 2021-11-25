@@ -11,6 +11,9 @@ class _State extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Dhaka City'),
+      ),
       body: Container(
         padding: EdgeInsets.all(10),
         child: FutureBuilder(
