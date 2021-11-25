@@ -11,6 +11,9 @@ class _State extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(),
+      appBar: AppBar(
+        title: Text('Dhaka City'),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
