@@ -33,7 +33,10 @@ class _State extends State<HomePage> {
                         children: [
                           Expanded(
                             flex: 4,
-                            child: Image.network('https://dhakacity.com.bd/wp-content/uploads/2021/09/dhaka-to-sylhet-air-ticket-from.png'),
+                            child: Image.network(
+                              'https://dhakacity.com.bd/wp-content/uploads/2021/09/dhaka-to-sylhet-air-ticket-from.png',
+                              height: 100,
+                            ),
                           ),
                           Expanded(
                             flex: 2,
