@@ -19,14 +19,23 @@ class _State extends State<HomePage> {
       body: Container(
         padding: EdgeInsets.all(10),
         child: FutureBuilder(
-          future: fetchWpPost(),
+          future: fetchWpCategory(),
           builder: (BuildContext context, AsyncSnapshot snapshot) {
             if (snapshot.hasData) {
-              return ListView.builder(
+              return GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing: 10.0, mainAxisSpacing: 10),
                 itemCount: snapshot.data.length,
                 itemBuilder: (BuildContext context, int index) {
                   Map myposts = snapshot.data[index];
-                  return PostTile(href: myposts['_links']["wp:featuredmedia"][0]['href'], title: myposts['title']['rendered'].replaceAll('#038;', ""), desc: myposts['excerpt']['rendered'], content: myposts['content']['rendered']);
+                  return Card(
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Text(myposts['slug'])
+                        ],
+                      ),
+                    ),
+                  );
                 },
               );
             }
