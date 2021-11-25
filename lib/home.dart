@@ -14,6 +14,9 @@ class _State extends State<HomePage> {
       body: Column(
         children: [
           Container(
+            height: 200,
+          ),
+          Container(
             padding: EdgeInsets.all(10),
             child: FutureBuilder(
               future: fetchWpPost(),
