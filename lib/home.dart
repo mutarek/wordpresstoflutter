@@ -15,7 +15,7 @@ class _State extends State<HomePage> {
         child: Column(
           children: [
             Container(
-              height: 200,
+              height: 150,
             ),
             Container(
               height: 500,
