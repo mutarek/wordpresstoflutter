@@ -25,7 +25,7 @@ class _State extends State<HomePage> {
                       itemBuilder: (BuildContext context, int index) {
                         Map myposts = snapshot.data[index];
                         return ListTile(
-                          title: Text(myposts['title']),
+                          title: Text(myposts['title'].toString()),
                         );
                       },
                     );
