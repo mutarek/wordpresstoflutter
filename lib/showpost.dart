@@ -13,6 +13,7 @@ class ShowState extends State<ShowPost> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Dhaka City'),
+        centerTitle: true,
       ),
       body: Container(
         padding: EdgeInsets.all(10),
