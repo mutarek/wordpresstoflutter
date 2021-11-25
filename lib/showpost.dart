@@ -11,6 +11,9 @@ class ShowState extends State<ShowPost> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Dhaka City'),
+      ),
       body: Container(
         padding: EdgeInsets.all(10),
         child: FutureBuilder(
