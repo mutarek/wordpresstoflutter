@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 
 import 'post.dart';
 import 'wp_api/wpapi.dart';
@@ -68,11 +69,12 @@ class PostTile extends StatefulWidget {
 
 class PostState extends State<PostTile> {
   var imgurl = '';
-  Widget shortDescriptionView(){
+  Widget shortDescriptionView() {
     return Html(
-      data:widget.desc,widget
-    )
+      data: widget.desc,
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
