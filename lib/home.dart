@@ -114,10 +114,7 @@ class PostState extends State<PostTile> {
                   ),
                 ),
               ),
-              Text(
-                widget.desc,
-                style: TextStyle(fontSize: 10),
-              )
+              shortDescriptionView(),
             ],
           ),
         ),
