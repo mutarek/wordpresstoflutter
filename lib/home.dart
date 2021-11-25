@@ -18,25 +18,6 @@ class _State extends State<HomePage> {
         child: Column(
           children: [
             Container(
-              height: 180,
-              child: FutureBuilder(
-                future: fetchWpCategory(),
-                builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  if (snapshot.hasData) {
-                    return GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
-                      itemCount: snapshot.data.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        Map myposts = snapshot.data[index];
-                        return Text(myposts['name']);
-                      },
-                    );
-                  }
-                  return CircularProgressIndicator();
-                },
-              ),
-            ),
-            Container(
               height: 500,
               padding: EdgeInsets.all(10),
               child: FutureBuilder(
