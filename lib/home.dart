@@ -21,7 +21,7 @@ class _State extends State<HomePage> {
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.hasData) {
                     return GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
                       itemCount: snapshot.data.length,
                       itemBuilder: (BuildContext context, int index) {
                         Map myposts = snapshot.data[index];
