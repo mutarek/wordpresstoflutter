@@ -12,7 +12,7 @@ class _State extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dhaka City'),
+        title: Text('DHAKACITY.COM.BD'),
       ),
       body: Container(
         padding: EdgeInsets.all(10),
