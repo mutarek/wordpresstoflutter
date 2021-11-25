@@ -25,8 +25,9 @@ class _State extends State<HomePage> {
                       itemCount: snapshot.data.length,
                       itemBuilder: (BuildContext context, int index) {
                         Map myposts = snapshot.data[index];
-                        return ListTile(
-                          title: Text(myposts['name']),
+                        return Container(
+                          height: 20,
+                          child: Text(myposts['name']),
                         );
                       },
                     );
