@@ -12,6 +12,7 @@ class ShowState extends State<ShowPost> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.amber,
         title: Text('Dhaka City'),
         centerTitle: true,
       ),
