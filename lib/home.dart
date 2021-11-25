@@ -37,7 +37,7 @@ class _State extends State<HomePage> {
                           ),
                           Expanded(
                             flex: 2,
-                            child: Text(myposts['slug']),
+                            child: Text(myposts['slug'].toUpperCase()),
                           )
                         ],
                       ),
