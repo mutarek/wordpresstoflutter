@@ -13,6 +13,7 @@ class _State extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('DHAKACITY.COM.BD'),
+        centerTitle: true,
       ),
       body: Container(
         padding: EdgeInsets.all(10),
