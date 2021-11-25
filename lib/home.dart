@@ -68,6 +68,11 @@ class PostTile extends StatefulWidget {
 
 class PostState extends State<PostTile> {
   var imgurl = '';
+  Widget shortDescriptionView(){
+    return Html(
+      data:widget.desc,widget
+    )
+  }
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
