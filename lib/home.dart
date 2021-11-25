@@ -33,7 +33,7 @@ class _State extends State<HomePage> {
                         children: [
                           Expanded(
                             flex: 4,
-                            child: Text(myposts['slug']),
+                            child: Icon(Icons.flight),
                           ),
                           Expanded(
                             flex: 2,
