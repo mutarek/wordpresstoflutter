@@ -99,7 +99,7 @@ class PostState extends State<PostTile> {
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.hasData) {
                     imgurl = snapshot.data["guid"]["rendered"];
-                    return ClipRRect(borderRadius: BorderRadius.circular(10), child: Image.network(snapshot.data["guid"]["rendered"]));
+                    return ClipRRect(borderRadius: BorderRadius.circular(10.0), child: Image.network(snapshot.data["guid"]["rendered"]));
                   }
                   return CircularProgressIndicator();
                 },
