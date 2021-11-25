@@ -20,18 +20,17 @@ class _State extends State<HomePage> {
                 future: fetchWpCategory(),
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.hasData) {
-                    return GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                    return ListView.builder(
                       itemCount: snapshot.data.length,
-                      itemBuilder: (ctx, ind) {
-                        Map mycategory = snapshot.data[ind];
+                      itemBuilder: (BuildContext context, int index) {
+                        Map myposts = snapshot.data[index];
                         return ListTile(
-                          title: Text(mycategory['name']),
+                          title: Text(myposts['title']),
                         );
                       },
                     );
-                    return CircularProgressIndicator();
                   }
+                  return CircularProgressIndicator();
                 },
               ),
             ),
