@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home.dart';
+import 'showpost.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -20,7 +21,7 @@ class _State extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: HomePage(),
+      body: ShowPost(),
     );
   }
 }
