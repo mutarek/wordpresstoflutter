@@ -17,6 +17,7 @@ class _State extends State<HomePage> {
             height: 200,
           ),
           Container(
+            height: 500,
             padding: EdgeInsets.all(10),
             child: FutureBuilder(
               future: fetchWpPost(),
