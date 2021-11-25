@@ -15,6 +15,7 @@ class _State extends State<HomePage> {
         title: Text('DHAKA CITY'),
         centerTitle: true,
       ),
+      drawer: Drawer(),
       body: Container(
         padding: EdgeInsets.all(10),
         child: FutureBuilder(
