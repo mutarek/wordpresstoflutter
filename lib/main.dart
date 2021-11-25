@@ -20,9 +20,6 @@ class _State extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Post Example'),
-      ),
       body: HomePage(),
     );
   }
