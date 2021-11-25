@@ -90,7 +90,7 @@ class PostState extends State<PostTile> {
       },
       child: Container(
         child: Card(
-          elevation: 5,
+          elevation: 15,
           child: Column(
             children: [
               FutureBuilder(
