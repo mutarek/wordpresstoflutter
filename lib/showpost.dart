@@ -11,6 +11,7 @@ class ShowState extends State<ShowPost> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(),
       appBar: AppBar(
         backgroundColor: Colors.teal,
         title: Text('Dhaka City'),
