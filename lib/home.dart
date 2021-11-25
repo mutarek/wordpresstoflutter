@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'post.dart';
-import 'showpost.dart';
 import 'wp_api/wpapi.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,12 +11,51 @@ class _State extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('DHAKA CITY'),
-          centerTitle: true,
+      appBar: AppBar(
+        title: Text('DHAKA CITY'),
+        centerTitle: true,
+      ),
+      drawer: Drawer(),
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: FutureBuilder(
+          future: fetchWpCategory(),
+          builder: (BuildContext context, AsyncSnapshot snapshot) {
+            if (snapshot.hasData) {
+              return GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing: 10.0, mainAxisSpacing: 10),
+                itemCount: snapshot.data.length,
+                itemBuilder: (BuildContext context, int index) {
+                  Map myposts = snapshot.data[index];
+                  return Card(
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Expanded(
+                            flex: 4,
+                            child: Image.network(
+                              'https://dhakacity.com.bd/wp-content/uploads/2021/09/dhaka-to-sylhet-air-ticket-from.png',
+                              height: 120,
+                              fit: BoxFit.contain,
+                              width: 180.0,
+                            ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Center(child: Text(myposts['slug'].toUpperCase())),
+                          )
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              );
+            }
+            return CircularProgressIndicator();
+          },
         ),
-        drawer: Drawer(),
-        body: ShowPost());
+      ),
+    );
   }
 }
 
