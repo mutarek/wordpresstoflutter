@@ -31,7 +31,14 @@ class _State extends State<HomePage> {
                     child: Container(
                       child: Column(
                         children: [
-                          Text(myposts['slug'])
+                          Expanded(
+                            flex: 4,
+                            child: Text(myposts['slug']),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Text(myposts['slug']),
+                          )
                         ],
                       ),
                     ),
