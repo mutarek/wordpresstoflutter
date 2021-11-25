@@ -42,7 +42,7 @@ class _State extends State<HomePage> {
                           ),
                           Expanded(
                             flex: 2,
-                            child: Text(myposts['slug'].toUpperCase()),
+                            child: Center(child: Text(myposts['slug'].toUpperCase())),
                           )
                         ],
                       ),
