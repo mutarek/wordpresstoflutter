@@ -90,7 +90,7 @@ class PostState extends State<PostTile> {
       },
       child: Container(
         child: Card(
-          elevation: 15,
+          elevation: 8,
           shadowColor: Colors.red,
           child: Column(
             children: [
