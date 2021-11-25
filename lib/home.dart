@@ -16,6 +16,24 @@ class _State extends State<HomePage> {
           children: [
             Container(
               height: 150,
+              child: FutureBuilder(
+                future: fetchWpCategory(),
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (snapshot.hasData) {
+                    return GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                      itemCount: snapshot.data.length,
+                      itemBuilder: (ctx, ind) {
+                        Map mycategory = snapshot.data[ind];
+                        return ListTile(
+                          title: Text(mycategory['name']),
+                        );
+                      },
+                    );
+                    return CircularProgressIndicator();
+                  }
+                },
+              ),
             ),
             Container(
               height: 500,

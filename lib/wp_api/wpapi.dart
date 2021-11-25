@@ -16,3 +16,11 @@ Future fetchWpPostImageUrl(href) async {
   var convertedDatatoJson = jsonDecode(response.body);
   return convertedDatatoJson;
 }
+
+Future<List> fetchWpCategory() async {
+  final response = await http.get(Uri.parse("https://dhakacity.com.bd/index.php/wp-json/wp/v2/posts?per_page=20"), headers: {
+    "Accept": "application/json"
+  });
+  var convertedDatatoJson = jsonDecode(response.body);
+  return convertedDatatoJson;
+}
