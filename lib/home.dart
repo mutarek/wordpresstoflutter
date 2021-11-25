@@ -111,7 +111,7 @@ class PostState extends State<PostTile> {
                   child: Text(
                     widget.title,
                     textAlign: TextAlign.justify,
-                    style: TextStyle(fontSize: 18.0, color: Colors.black),
+                    style: TextStyle(fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
