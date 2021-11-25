@@ -15,7 +15,7 @@ class _State extends State<HomePage> {
         child: Column(
           children: [
             Container(
-              height: 150,
+              height: 180,
               child: FutureBuilder(
                 future: fetchWpCategory(),
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
