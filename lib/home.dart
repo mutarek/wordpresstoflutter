@@ -11,28 +11,22 @@ class _State extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              padding: EdgeInsets.all(10),
-              child: FutureBuilder(
-                future: fetchWpPost(),
-                builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  if (snapshot.hasData) {
-                    return ListView.builder(
-                      itemCount: snapshot.data.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        Map myposts = snapshot.data[index];
-                        return PostTile(href: myposts['_links']["wp:featuredmedia"][0]['href'], title: myposts['title']['rendered'].replaceAll('#038;', ""), desc: myposts['excerpt']['rendered'], content: myposts['content']['rendered']);
-                      },
-                    );
-                  }
-                  return CircularProgressIndicator();
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: FutureBuilder(
+          future: fetchWpPost(),
+          builder: (BuildContext context, AsyncSnapshot snapshot) {
+            if (snapshot.hasData) {
+              return ListView.builder(
+                itemCount: snapshot.data.length,
+                itemBuilder: (BuildContext context, int index) {
+                  Map myposts = snapshot.data[index];
+                  return PostTile(href: myposts['_links']["wp:featuredmedia"][0]['href'], title: myposts['title']['rendered'].replaceAll('#038;', ""), desc: myposts['excerpt']['rendered'], content: myposts['content']['rendered']);
                 },
-              ),
-            ),
-          ],
+              );
+            }
+            return CircularProgressIndicator();
+          },
         ),
       ),
     );
