@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'post.dart';
 import 'wp_api/wpapi.dart';
 
@@ -11,6 +10,7 @@ class _State extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(),
       body: SingleChildScrollView(
         child: Column(
           children: [
