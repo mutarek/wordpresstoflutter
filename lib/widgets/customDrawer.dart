@@ -35,7 +35,7 @@ Widget customDrawer() {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          'Name',
+                          'M Tarek',
                           style: TextStyle(fontSize: 30),
                         )
                       ],
