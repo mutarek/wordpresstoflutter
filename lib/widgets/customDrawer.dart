@@ -80,7 +80,7 @@ void _show(BuildContext ctx) {
               color: Colors.amber,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text('This is test bottom Sheet'),
                   SizedBox(
