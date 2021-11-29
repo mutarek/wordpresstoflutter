@@ -80,18 +80,11 @@ void _show(BuildContext ctx) {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextField(
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(labelText: 'Name'),
-                ),
-                TextField(
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(labelText: 'Age'),
-                ),
+                Text('This is test bottom Sheet'),
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
-                ElevatedButton(onPressed: () {}, child: Text('Submit'))
+                Text('We will use the dense property to make the text smaller. Setting this property to true will make the text small. By default the value is false.'),
               ],
             ),
           ));
