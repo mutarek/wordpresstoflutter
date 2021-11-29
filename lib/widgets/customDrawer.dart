@@ -85,6 +85,13 @@ void _show(BuildContext ctx) {
                   height: 10,
                 ),
                 Text('We will use the dense property to make the text smaller. Setting this property to true will make the text small. By default the value is false.'),
+                SizedBox(
+                  height: 5,
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('OKEY'),
+                )
               ],
             ),
           ));
