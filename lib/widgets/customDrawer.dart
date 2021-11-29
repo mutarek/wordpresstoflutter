@@ -89,7 +89,9 @@ void _show(BuildContext ctx) {
                   height: 5,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(ctx);
+                  },
                   child: Text('OKEY'),
                 )
               ],
