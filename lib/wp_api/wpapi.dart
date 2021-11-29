@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 Future<List> fetchWpPost() async {
-  final response = await http.get(Uri.parse("https://dhakacitxy.com.bd/index.php/wp-json/wp/v2/posts?per_page=20"), headers: {
+  final response = await http.get(Uri.parse("https://dhakacity.com.bd/index.php/wp-json/wp/v2/posts?per_page=20"), headers: {
     "Accept": "application/json"
   });
   var convertedDatatoJson = jsonDecode(response.body);
