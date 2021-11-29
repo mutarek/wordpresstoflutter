@@ -14,7 +14,7 @@ Widget customDrawer() {
               backgroundColor: Colors.teal,
               radius: 50,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
+                borderRadius: BorderRadius.circular(99.0),
                 child: Image.network('https://seidnacional.com/portaldoaluno/wp-content/uploads/learn-press-profile/4/172522ec1028ab781d9dfd17eaca4427.jpg'),
               ),
             ),
