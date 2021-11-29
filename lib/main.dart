@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'home.dart';
 import 'showpost.dart';
+import 'widgets/customDrawer.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -21,6 +22,9 @@ class _State extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: customDrawer(),
+      ),
       body: ShowPost(),
     );
   }
