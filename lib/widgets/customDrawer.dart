@@ -36,6 +36,7 @@ Widget customDrawer() {
                       children: [
                         Text(
                           'M Tarek',
+                          textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 30),
                         )
                       ],
