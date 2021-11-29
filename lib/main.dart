@@ -22,9 +22,6 @@ class _State extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: customDrawer(),
-      ),
       body: ShowPost(),
     );
   }

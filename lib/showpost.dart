@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
+import 'widgets/customDrawer.dart';
 import 'wp_api/wpapi.dart';
 
 class ShowPost extends StatefulWidget {
@@ -11,7 +12,9 @@ class ShowState extends State<ShowPost> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: customDrawer(),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.teal,
         title: Text('Dhaka City'),
