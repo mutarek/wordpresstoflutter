@@ -5,7 +5,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 Widget customDrawer(context) {
   return SingleChildScrollView(
     child: Padding(
-      padding: EdgeInsets.all(20.0),
+      padding: EdgeInsets.all(5.0),
       child: Column(
         children: [
           GestureDetector(
