@@ -13,7 +13,10 @@ Widget customDrawer() {
             child: CircleAvatar(
               backgroundColor: Colors.teal,
               radius: 50,
-              child: Image.network('https://seidnacional.com/portaldoaluno/wp-content/uploads/learn-press-profile/4/172522ec1028ab781d9dfd17eaca4427.jpg'),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(100),
+                child: Image.network('https://seidnacional.com/portaldoaluno/wp-content/uploads/learn-press-profile/4/172522ec1028ab781d9dfd17eaca4427.jpg'),
+              ),
             ),
           )
         ],
