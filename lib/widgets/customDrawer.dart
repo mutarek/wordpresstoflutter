@@ -77,7 +77,7 @@ void _show(BuildContext ctx) {
       builder: (ctx) => Padding(
             padding: EdgeInsets.all(15),
             child: Container(
-              color: Colors.teal,
+              color: Colors.amber,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
