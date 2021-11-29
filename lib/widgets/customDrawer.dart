@@ -72,7 +72,7 @@ Widget customDrawer(context) {
 void _show(BuildContext ctx) {
   showModalBottomSheet(
       isScrollControlled: true,
-      elevation: 5,
+      elevation: 2,
       context: ctx,
       builder: (ctx) => Padding(
             padding: EdgeInsets.all(15),
