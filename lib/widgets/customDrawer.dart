@@ -57,7 +57,7 @@ Widget customDrawer() {
             elevation: 1,
             child: ListTile(
               title: Text('Bottom Sheet'),
-              trailing: Icon(Icons.arrow_back),
+              trailing: Icon(Icons.arrow_forward),
               onTap: () {},
             ),
           )
