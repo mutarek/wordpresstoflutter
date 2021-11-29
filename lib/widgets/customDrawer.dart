@@ -10,7 +10,7 @@ Widget customDrawer() {
         children: [
           GestureDetector(
             onTap: () {
-              Fluttertoast.showToast(msg: "Mohiuddin Tarek", toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER_RIGHT, timeInSecForIosWeb: 1, backgroundColor: Colors.blue, textColor: Colors.white, fontSize: 20.0);
+              Fluttertoast.showToast(msg: "Mohiuddin Tarek", toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER_RIGHT, timeInSecForIosWeb: 5, backgroundColor: Colors.blue, textColor: Colors.white, fontSize: 20.0);
             },
             child: Container(
               height: 200,
