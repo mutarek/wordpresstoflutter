@@ -45,7 +45,8 @@ Widget customDrawer() {
                 ],
               ),
             ),
-          )
+          ),
+          Divider()
         ],
       ),
     ),
