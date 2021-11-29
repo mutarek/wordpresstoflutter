@@ -6,7 +6,13 @@ Widget customDrawer() {
     child: Padding(
       padding: EdgeInsets.all(20.0),
       child: Column(
-        children: [],
+        children: [
+          Container(
+            height: 200,
+            width: double.infinity,
+            color: Colors.amber,
+          )
+        ],
       ),
     ),
   );
