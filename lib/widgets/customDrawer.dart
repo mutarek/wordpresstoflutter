@@ -10,7 +10,10 @@ Widget customDrawer() {
           Container(
             height: 200,
             width: double.infinity,
-            color: Colors.amber,
+            child: CircleAvatar(
+              backgroundColor: Colors.teal,
+              radius: 50,
+            ),
           )
         ],
       ),
