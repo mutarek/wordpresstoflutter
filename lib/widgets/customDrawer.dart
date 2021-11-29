@@ -28,7 +28,6 @@ Widget customDrawer() {
                       ),
                     ),
                   ),
-                  Divider(),
                   Expanded(
                     flex: 1,
                     child: Column(
