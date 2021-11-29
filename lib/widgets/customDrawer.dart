@@ -19,14 +19,14 @@ Widget customDrawer() {
                 children: [
                   Expanded(
                     flex: 1,
-                   child: CircleAvatar(
-                backgroundColor: Colors.teal,
-                radius: 50,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(99.0),
-                  child: Image.network('https://seidnacional.com/portaldoaluno/wp-content/uploads/learn-press-profile/4/172522ec1028ab781d9dfd17eaca4427.jpg'),
-                ),
-              ),,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.teal,
+                      radius: 50,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(99.0),
+                        child: Image.network('https://seidnacional.com/portaldoaluno/wp-content/uploads/learn-press-profile/4/172522ec1028ab781d9dfd17eaca4427.jpg'),
+                      ),
+                    ),
                   )
                 ],
               ),
