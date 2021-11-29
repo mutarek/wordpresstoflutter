@@ -33,7 +33,7 @@ class ShowState extends State<ShowPost> {
             }
             return Center(
               child: CircularProgressIndicator(),
-              heightFactor: 24.0,
+              heightFactor: 50.0,
             );
           },
         ),
