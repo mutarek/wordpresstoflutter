@@ -13,7 +13,7 @@ class ShowState extends State<ShowPost> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        child: customDrawer(),
+        child: customDrawer(context),
       ),
       appBar: AppBar(
         backgroundColor: Colors.teal,
