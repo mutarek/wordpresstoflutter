@@ -47,12 +47,18 @@ Widget customDrawer() {
             ),
           ),
           Divider(
-            thickness: 5, // thickness of the line
+            thickness: 2, // thickness of the line
             indent: 20, // empty space to the leading edge of divider.
             endIndent: 20, // empty space to the trailing edge of the divider.
-            color: Colors.black, // The color to use when painting the line.
-            height: 20, // The divider's height extent.
+            color: Colors.tealAccent, // The color to use when painting the line.
+            height: 10, // The divider's height extent.
           ),
+          Card(
+            elevation: 1,
+            child: ListTile(
+              title: Text('Bottom Sheet'),
+            ),
+          )
         ],
       ),
     ),
