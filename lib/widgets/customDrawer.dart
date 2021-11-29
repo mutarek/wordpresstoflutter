@@ -18,7 +18,7 @@ Widget customDrawer() {
               child: Row(
                 children: [
                   Expanded(
-                    flex: 1,
+                    flex: 2,
                     child: CircleAvatar(
                       backgroundColor: Colors.teal,
                       radius: 50,
@@ -34,7 +34,10 @@ Widget customDrawer() {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text('Name')
+                        Text(
+                          'Name',
+                          style: TextStyle(fontSize: 30),
+                        )
                       ],
                     ),
                   )
