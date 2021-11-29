@@ -76,25 +76,28 @@ void _show(BuildContext ctx) {
       context: ctx,
       builder: (ctx) => Padding(
             padding: EdgeInsets.all(15),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('This is test bottom Sheet'),
-                SizedBox(
-                  height: 10,
-                ),
-                Text('We will use the dense property to make the text smaller. Setting this property to true will make the text small. By default the value is false.'),
-                SizedBox(
-                  height: 5,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(ctx);
-                  },
-                  child: Text('OKEY'),
-                )
-              ],
+            child: Container(
+              color: Colors.teal,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('This is test bottom Sheet'),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text('We will use the dense property to make the text smaller. Setting this property to true will make the text small. By default the value is false.'),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pop(ctx);
+                    },
+                    child: Text('OKEY'),
+                  )
+                ],
+              ),
             ),
           ));
 }
