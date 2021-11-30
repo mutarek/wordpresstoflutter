@@ -7,7 +7,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      brightness: Brightness.light,
+      brightness: Brightness.dark,
     ),
     home: SplashScreen(),
   ));
