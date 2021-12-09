@@ -62,6 +62,9 @@ Widget customDrawer(context) {
                 _show(context);
               },
             ),
+          ),
+          ListTile(
+            title: Text('Tours'),
           )
         ],
       ),
