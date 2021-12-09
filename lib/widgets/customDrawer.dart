@@ -63,8 +63,10 @@ Widget customDrawer(context) {
               },
             ),
           ),
-          ListTile(
-            title: Text('Tours'),
+          Card(
+            child: ListTile(
+              title: Text('Tours'),
+            ),
           )
         ],
       ),
