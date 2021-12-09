@@ -9,6 +9,7 @@ class ShowPost extends StatefulWidget {
 }
 
 class ShowState extends State<ShowPost> {
+  List blog
   @override
   Widget build(BuildContext context) {
     return Scaffold(
