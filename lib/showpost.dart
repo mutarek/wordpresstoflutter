@@ -26,7 +26,7 @@ class ShowState extends State<ShowPost> {
         child: FutureBuilder(
           future: fetchWpPost(),
           builder: (BuildContext context, AsyncSnapshot snapshot) {
-            blog = snapshot.data;
+            blog = snapshot!.data;
             if (snapshot.hasData) {
               return ListView.builder(
                 itemCount: blog.take(5).length,
