@@ -120,7 +120,7 @@ class PostState extends State<PostTile> {
               Divider(
                 color: Colors.red,
               ),
-              //shortDescriptionView(),
+              shortDescriptionView(),
             ],
           ),
         ),
