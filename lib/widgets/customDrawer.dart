@@ -24,7 +24,7 @@ Widget customDrawer(context) {
                       radius: 50,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(99.0),
-                        child: Image.network('https://seidnacional.com/portaldoaluno/wp-content/uploads/learn-press-profile/4/172522ec1028ab781d9dfd17eaca4427.jpg'),
+                        child: Image.network('https://cimages1.touristlink.com/repository/member/218021/tarek_edit_5701.jpg'),
                       ),
                     ),
                   ),
