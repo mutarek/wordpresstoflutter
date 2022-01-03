@@ -91,7 +91,7 @@ class PostState extends State<PostTile> {
       child: Container(
         child: Card(
           elevation: 5,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(32.0))),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(32.0), topRight: Radius.circular(32.0))),
           child: Column(
             children: [
               FutureBuilder(
