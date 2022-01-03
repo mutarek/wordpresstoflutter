@@ -101,7 +101,9 @@ class PostState extends State<PostTile> {
                     imgurl = snapshot.data["guid"]["rendered"];
                     return ClipRRect(borderRadius: BorderRadius.circular(32.0), child: Image.network(snapshot.data["guid"]["rendered"]));
                   }
-                  return CircularProgressIndicator();
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
                 },
               ),
               Padding(
