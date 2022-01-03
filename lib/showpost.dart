@@ -39,6 +39,7 @@ class ShowState extends State<ShowPost> {
             return Center(
               child: CircularProgressIndicator(
                 backgroundColor: Colors.red,
+                strokeWidth: 50,
               ),
               heightFactor: 100.0,
             );
