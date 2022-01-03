@@ -53,21 +53,6 @@ Widget customDrawer(context) {
             color: Colors.tealAccent, // The color to use when painting the line.
             height: 10, // The divider's height extent.
           ),
-          Card(
-            elevation: 1,
-            child: ListTile(
-              title: Text('Bottom Sheet'),
-              trailing: Icon(Icons.arrow_forward),
-              onTap: () {
-                _show(context);
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              title: Text('Tours'),
-            ),
-          )
         ],
       ),
     ),
