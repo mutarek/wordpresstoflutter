@@ -23,7 +23,7 @@ Widget customDrawer(context) {
                       backgroundColor: Colors.teal,
                       radius: 50,
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(99.0),
+                        borderRadius: BorderRadius.circular(50.0),
                         child: Image.network('https://cimages1.touristlink.com/repository/member/218021/tarek_edit_5701.jpg'),
                       ),
                     ),
